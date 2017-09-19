@@ -8,7 +8,7 @@ if [ ! -f "~/.bashrc" ]; then
 	echo "Moving $old to $target"
 	mkdir -p .old-bashrc
 	touch $target
-	mv -v $old $target
+	cp -v $old $target
 	# rm $old
 fi
 ln -s ~/custom-bashrc/.bashrc ~/.bashrc
