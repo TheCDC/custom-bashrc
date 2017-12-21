@@ -115,7 +115,7 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
-source /usr/local/bin/activate.sh
+source `which activate.sh`
 # auto activate Python virtualenv
 if [ -f "env/bin/activate" ]; then
     YELLOW='\033[1;33m'
