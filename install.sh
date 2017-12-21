@@ -9,6 +9,7 @@ if [ ! -f "~/.bashrc" ]; then
 	mkdir -p .old-bashrc
 	touch $target
 	cp -v $old $target
-	# rm $old
+	rm $old
 fi
+
 ln -s ~/custom-bashrc/.bashrc ~/.bashrc
